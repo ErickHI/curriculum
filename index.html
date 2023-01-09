@@ -56,7 +56,7 @@
       <div class="col-lg-8 col-md-7 text-center text-md-start">
         <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Erick Hernández Islas</h2>
         <p data-aos="fade-left" data-aos-delay="100">Ingeniero en Sistemas Computacionales</p>
-        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1 btn-cv" href="https://www.linkedin.com/in/erickhi/" target="_blank">Ver más</a><a class="btn btn-success shadow-sm mt-1 btn-contact" href="#contact">Contáctame</a></div>
+        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1 btn-cv" href="#portafolio">Portafolio</a><a class="btn btn-success shadow-sm mt-1 btn-contact" href="#contact">Contáctame</a></div>
       </div>
     </div>
   </div>
@@ -91,12 +91,12 @@
       <div class="col-md-6">
         <div class="mb-2"><span>Front-end</span>
           <div class="progress my-1">
-            <div class="progress-bar bg-barra" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-barra" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="mb-2"><span>Back-end</span>
           <div class="progress my-1">
-            <div class="progress-bar bg-barra" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-barra" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="mb-2"><span>Bases de datos SQL</span>
@@ -113,7 +113,7 @@
         </div>
         <div class="mb-2"><span>Analisis de datos</span>
           <div class="progress my-1">
-            <div class="progress-bar bg-barra-2" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-barra-2" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
         <div class="mb-2"><span>Cloud</span>
@@ -212,7 +212,7 @@
     </div>
   </div>
   <hr class="d-print-none"/>
-  <div class="portafolio px-3 px-lg-4">
+  <div class="portafolio px-3 px-lg-4" id="portafolio">
     <h2 class="h3 text mb-3">Portafolio</h2>
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -224,37 +224,116 @@
               <p class="card-text">Gráficos realizados con HTML y CSS.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://output.jsbin.com/lakocek" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Gráficos realizados con HTML y CSS.</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img1.0.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de porcentajes de carga.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/lakocek" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img2.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de formulario Login.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/yesirig" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img3.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de etiqueta tipo "Checked" con animaciones.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/xavorul" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img4.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de "cartas" con animaciones.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/qadohir" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img5.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de interfaces con Bootstrap.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://bootstrapintergaces-ehi.netlify.app/" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS, Bootstrap</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-                <small class="text-muted">HTML5, CSS3</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/Img2.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
-            <div class="card-body">
-              <p class="card-text">Diseño de formulario Login.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://output.jsbin.com/yesirig" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                </div>
-                <small class="text-muted">HTML5, CSS3</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="images/Img3.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
-            <div class="card-body">
-              <p class="card-text">Diseño de etiqueta tipo "Checked" con animaciones.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://output.jsbin.com/xavorul" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
-                </div>
-                <small class="text-muted">HTML5, CSS3</small>
+                <small class="text-muted">Front-end</small>
               </div>
             </div>
           </div>
@@ -262,32 +341,171 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/Img4.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+            <img src="images/clevercloud.png" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
             <div class="card-body">
-              <p class="card-text">Diseño de "cartas" con animaciones.</p>
+              <p class="card-text">Clever Cloud</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://output.jsbin.com/qadohir" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <a href="#" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
                 </div>
-                <small class="text-muted">HTML5, CSS</small>
+                <small class="text-muted">Full Stack</small>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col">
           <div class="card shadow-sm">
-            <img src="images/Img5.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+            <img src="images/iot.png" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
             <div class="card-body">
-              <p class="card-text">Diseño de interfaces con Bootstrap.</p>
+              <p class="card-text">Medidor de CO2 IoT</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://bootstrapintergaces-ehi.netlify.app/" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                  <a href="https://github.com/ErickHI/Sensor-CO2-IoT" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
                 </div>
-                <small class="text-muted">HTML5, CSS, Bootstrap</small>
+                <small class="text-muted">Full-stack, IoT (php)</small>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/interfaz1.png" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+            <div class="card-body">
+              <p class="card-text">Interfaces de usuario para Sistemas Embebidos.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Ver
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Gráficos realizados con HTML y CSS.</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img1.0.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de porcentajes de carga.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/lakocek" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img2.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de formulario Login.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/yesirig" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img3.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de etiqueta tipo "Checked" con animaciones.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/xavorul" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS3</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img4.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de "cartas" con animaciones.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://output.jsbin.com/qadohir" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card shadow-sm">
+                                  <img src="images/Img5.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+                                  <div class="card-body">
+                                    <p class="card-text ms-4">Diseño de interfaces con Bootstrap.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <a href="https://bootstrapintergaces-ehi.netlify.app/" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary ms-4">Ver</button></a>
+                                      </div>
+                                      <small class="text-muted me-4">HTML5, CSS, Bootstrap</small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <small class="text-muted ms-1">Full-stack, Arduino (NodeJS, MongoDB)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="images/hackathon.png" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
+            <div class="card-body">
+              <p class="card-text">Proyecto para el Hackathon "Hack the Ocean".</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/oto-ml/Hacktlantis" target="blank" class="text-decoration-none"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                </div>
+                <small class="text-muted">Full Stack (php, Azure)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="card shadow-sm">
             <img src="images/ImgONE.jpg" alt="proyecto1" width="100%" class="bd-placeholder-img card-img-top">
@@ -310,24 +528,6 @@
   <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
     <h2 class="h3 text mb-3">Contacto</h2>
     <div class="row">
-      <!-- <div class="col-md-7 d-print-none">
-        <div class="my-2"><form action="https://formspree.io/your@email.com"
-    method="POST">
-  <div class="row">
-    <div class="col-6">
-      <input class="form-control" type="text" id="name" name="name" placeholder="Tu nombre" required>
-    </div>
-    <div class="col-6">
-      <input class="form-control" type="email" id="email" name="_replyto" placeholder="Tu correo" required>
-    </div>
-  </div>
-  <div class="form-group my-2">
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"  placeholder="Tu mensaje" required></textarea>
-  </div>
-  <button class="btn btn-primary mt-2 btn-contact" type="submit">Enviar</button>
-</form>
-        </div>
-      </div> -->
       <div class="col">
         <div class="mt-2">
           <h3 class="h6">Email</h3>
